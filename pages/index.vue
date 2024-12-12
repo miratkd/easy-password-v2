@@ -86,7 +86,7 @@ function removePasswordFromLocal(newPassword: site): void {
         }
     })
     localPasswordList.value = newLocalList
-    localStorage.setItem('localPasswordList', JSON.stringify(localPasswordList));
+    localStorage.setItem('localPasswordList', JSON.stringify(localPasswordList.value));
 }
 
 function getPasswords(): void {

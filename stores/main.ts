@@ -30,7 +30,7 @@ export const useMainStore = defineStore('main', ()=>{
     function setIsLoading(value:boolean) { isLoading.value = value }
 
     function createAccount(payload:any) {
-        return axios.post(backEndUrl.value + 'account/', {payload}, {})
+        return axios.post(backEndUrl.value + 'account/', {user:payload}, {})
     }
 
     function login(payload:loginUser): Promise<loginResp> {

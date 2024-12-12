@@ -4,5 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   devServer: {host: '192.168.0.183'},
   css: ["~/assets/main.sass"],
-  modules: ['@pinia/nuxt']
+  modules: ['@pinia/nuxt'],
+  app:{
+    head:{
+      title: 'Easy Password'
+    }
+  }
 })

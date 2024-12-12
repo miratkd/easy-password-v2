@@ -75,7 +75,7 @@ function createAccount() {
         checkPasswordMessage.value = 'As senhas não estão iguais.'
         return
     }
-    const credentials: loginUser = {
+    const credentials = {
         username: newUser.value,
         email: email.value,
         password: password.value
