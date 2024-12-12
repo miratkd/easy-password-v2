@@ -1,0 +1,10 @@
+{
+    "user": {
+        "username": [
+            "Informe um nome de usuário válido. Este valor pode conter apenas letras, números e os seguintes caracteres @/./+/-/_."
+        ],
+        "email": [
+            "Insira um endereço de email válido."
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "id": 90,
+    "user": {
+        "id": 92,
+        "username": "TestUser",
+        "first_name": "",
+        "last_name": "",
+        "email": "TestUser@hotmail.com",
+        "is_active": true
+    }
+}

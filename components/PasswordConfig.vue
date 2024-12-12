@@ -101,10 +101,10 @@ function getActiveBar(level: number) {
 function generatePassword() {
   let result = '';
   let characters = ''
-  if (upperCase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  if (lowerCase) characters += 'abcdefghijklmnopqrstuvwxyz'
-  if (numbers) characters += '0123456789'
-  if (symbols) characters += '!@#$%^&*()'
+  if (upperCase.value) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  if (lowerCase.value) characters += 'abcdefghijklmnopqrstuvwxyz'
+  if (numbers.value) characters += '0123456789'
+  if (symbols.value) characters += '!@#$%^&*()'
   let counter = 0;
   while (counter < charNumber.value) {
     result += characters.charAt(Math.floor(Math.random() * characters.length));
