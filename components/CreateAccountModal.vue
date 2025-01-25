@@ -29,7 +29,7 @@
             <div class="create-account-form-row">
                 <p class="create-account-input-label">Confirmar senha :</p>
                 <div class="create-account-input-container">
-                    <input type="password" data-test="user-password2-input" class="create-account-input"
+                    <input type="password" @keyup.enter="createAccount()" data-test="user-password2-input" class="create-account-input"
                         v-model="checkPassword" :class="checkMessage(checkPasswordMessage)">
                     <p data-test="check-password-message">{{ checkPasswordMessage }}</p>
                 </div>
@@ -118,7 +118,7 @@ function checkMessage(message: string) {
 
 .create-modal {
     background-color: #24232C;
-    width: 60vw;
+    width: 50vw;
     max-height: 80vh;
     padding: 5vh 6vw 0 6vw;
     border: 1px solid #A4FFAF;

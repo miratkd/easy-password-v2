@@ -8,7 +8,7 @@
             </div>
             <div class="login-row">
                 <p class="login-row-label">Senha :</p>
-                <input type="password" v-model="password" class="login-row-input">
+                <input @keyup.enter="login()" type="password" v-model="password" class="login-row-input">
             </div>
             <div class="login-button-container">
                 <button v-on:click="login()" class="login-button">Login</button>
@@ -58,7 +58,7 @@ function login() {
 
 .login-modal {
     background-color: #24232C;
-    width: 60vw;
+    width: 40vw;
     max-height: 80vh;
     padding: 5vh 6vw 0 6vw;
     border: 1px solid #A4FFAF;

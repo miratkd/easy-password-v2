@@ -200,7 +200,7 @@ span {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 .page-card {
